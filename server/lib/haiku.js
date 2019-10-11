@@ -21,18 +21,20 @@ const nouns = [
   'wood', 'dream', 'cherry', 'tree', 'fog', 'frost', 'voice', 'paper',
   'frog', 'smoke', 'star'
 ];
-const url = window.location.search;
-url = url.replace("?varName=", ''); // remove the ?
-console.log('lllllllllllll',url);
-   
+
+
 
 
 module.exports = () => {
   
   console.log('i am in haiku');
-   const abc = url;
-   console.log('kkkkkkkkkkkkkk',abc);
-  const adj = adjs[Math.floor(Math.random() * adjs.length)];
+  const current_url = new URL('https://saasnicwebrtc.herokuapp.com/?varName=$user');
+const search_params = current_url.searchParams;
+
+
+const id = search_params.get('id');
+console.log('ooooooooooooo',id);
+   const adj = adjs[Math.floor(Math.random() * adjs.length)];
   const noun = nouns[Math.floor(Math.random() * nouns.length)];
   const MIN = 1000;
   const MAX = 9999;
