@@ -24,28 +24,15 @@ const nouns = [
   'frog', 'smoke', 'star'
 ];
 
-const server = http.createServer((request, response) => {
-    // this is the request url
-    let request_url = request.url;
-
-    // routing
-   
-        const current_url = new URL(request_url);
-        const search_params = current_url.searchParams;
-
-        // "page_no" parameter
-        
-            const page_no = search_params.get('varName');
-      console.log('oooooooooooooo', page_no);
-        
-    
-});
 
 
 module.exports = () => {
    console.log('i am in haiku');
 
-
+http.createServer(function (req, res) {
+  const queryObject = url.parse(req.url,true).query;
+  console.log(queryObject);
+)};
 
 
    const adj = adjs[Math.floor(Math.random() * adjs.length)];
