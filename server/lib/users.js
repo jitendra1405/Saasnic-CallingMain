@@ -3,7 +3,18 @@ const haiku = require('./haiku');
 
 const users = {};
 
+ app.get('/', (req, res) => {
+  res.sendFile(`${__dirname}/index.html`);
+});
+
+app.post('/login', (req, res) => {
+  const c = req.body.c;
+  
+  
+  console.log('username is the ',c);
  
+
+});
   
 
 
