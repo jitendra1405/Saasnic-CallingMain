@@ -32,7 +32,7 @@ module.exports = () => {
 http.createServer(function (req, res) {
   const queryObject = url.parse(req.url,true).query;
   console.log(queryObject);
-)};
+});
 
 
    const adj = adjs[Math.floor(Math.random() * adjs.length)];
