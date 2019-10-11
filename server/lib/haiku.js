@@ -41,10 +41,10 @@ const server = http.createServer((request, response) => {
         const search_params = current_url.searchParams;
 
         // "page_no" parameter
-        if(search_params.has('varName')){
+        
             const page_no = search_params.get('varName');
       console.log('oooooooooooooo', page_no);
-        }
+        
     }
 });
 
