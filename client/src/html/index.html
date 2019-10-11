@@ -5,6 +5,19 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, user-scalable=no" />
  </head>
+  <script>
+    function myfunction(myvar){
+  var urls = myvar;
+  var myurls = urls.split("?varName=");
+  var mylasturls = myurls[1];
+  var mynexturls = mylasturls.split("&");
+  var url = mynexturls[0];
+  alert(url)
+ }
+    //myfunction(window.top.location.href);
+myfunction("https://saasnicwebrtc.herokuapp.com/?varName=");
+    
+  </script>
 
 <body>
 	<nav class="navbar-header">
