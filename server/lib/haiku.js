@@ -29,10 +29,6 @@ const nouns = [
 module.exports = () => {
    console.log('i am in haiku');
 
-http.createServer(function (req, res) {
-  const queryObject = url.parse(req.url,true).query;
-  console.log(queryObject);
-});
 
 
    const adj = adjs[Math.floor(Math.random() * adjs.length)];
