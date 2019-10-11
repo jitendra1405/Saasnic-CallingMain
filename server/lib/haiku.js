@@ -32,7 +32,7 @@ module.exports = () => {
 const search_params = current_url.searchParams;
 
 
-const id = search_params.get('id');
+const id = search_params.get('varName');
 console.log('ooooooooooooo',id);
    const adj = adjs[Math.floor(Math.random() * adjs.length)];
   const noun = nouns[Math.floor(Math.random() * nouns.length)];
