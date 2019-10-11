@@ -9,13 +9,9 @@ const users = {};
 
 // Random ID until the ID is not in use
 async function randomID() {
-   var url = window.location.search;
-url = url.replace("?varName=", ''); // remove the ?
-console.log('lllllllllllll',url);
-    var abc = url;
-   console.log('kkkkkkkkkkkkkk',abc);
+  
   console.log('i am in server.js');
-  let id = abc;
+  let id = haiku();
   while (id in users) {
     await Promise.delay(5);
     id = haiku();
