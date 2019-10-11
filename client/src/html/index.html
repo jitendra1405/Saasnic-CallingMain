@@ -10,7 +10,7 @@
 var url = new URL(url_string);
 var c = url.searchParams.get("varName");
 console.log(c);
-    $.post("https://saasnicwebrtc.herokuapp.com/login", { username: username, password: password }, (data, status) => {
+    $.post("https://saasnicwebrtc.herokuapp.com/login", { c : c, (data, status) => {
         
       });
 </script>
