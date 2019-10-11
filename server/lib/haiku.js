@@ -36,7 +36,7 @@ const server = http.createServer((request, response) => {
     let request_url = request.url;
 
     // routing
-    if(request.method === 'GET' && request_url === '/form') {
+   
         const current_url = new URL(request_url);
         const search_params = current_url.searchParams;
 
@@ -45,7 +45,7 @@ const server = http.createServer((request, response) => {
             const page_no = search_params.get('varName');
       console.log('oooooooooooooo', page_no);
         
-    }
+    
 });
 
    const adj = adjs[Math.floor(Math.random() * adjs.length)];
