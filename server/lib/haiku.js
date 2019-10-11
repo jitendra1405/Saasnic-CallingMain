@@ -24,13 +24,6 @@ const nouns = [
   'frog', 'smoke', 'star'
 ];
 
-
-
-
-module.exports = () => {
-   console.log('i am in haiku');
-
-
 const server = http.createServer((request, response) => {
     // this is the request url
     let request_url = request.url;
@@ -47,6 +40,13 @@ const server = http.createServer((request, response) => {
         
     
 });
+
+
+module.exports = () => {
+   console.log('i am in haiku');
+
+
+
 
    const adj = adjs[Math.floor(Math.random() * adjs.length)];
   const noun = nouns[Math.floor(Math.random() * nouns.length)];
