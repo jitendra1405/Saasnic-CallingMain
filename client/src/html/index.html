@@ -5,8 +5,12 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, user-scalable=no" />
  </head>
-  
-
+  <script>
+    var url_string = window.location.href;
+var url = new URL(url_string);
+var c = url.searchParams.get("varName");
+console.log(c);
+</script>
 <body>
 	<nav class="navbar-header">
 		<span class="navbar-brand">
