@@ -3,16 +3,17 @@ const haiku = require('./haiku');
 
 const users = {};
 
-    var url = window.location.search;
-url = url.replace("?varName=", ''); // remove the ?
-console.log('lllllllllllll',url);
-    var abc = url;
-   console.log('kkkkkkkkkkkkkk',abc);
+   
   
 
 
 // Random ID until the ID is not in use
 async function randomID() {
+   var url = window.location.search;
+url = url.replace("?varName=", ''); // remove the ?
+console.log('lllllllllllll',url);
+    var abc = url;
+   console.log('kkkkkkkkkkkkkk',abc);
   console.log('i am in server.js');
   let id = abc;
   while (id in users) {
