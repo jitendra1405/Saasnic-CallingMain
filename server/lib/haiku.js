@@ -25,11 +25,7 @@ const nouns = [
 
 
 module.exports = () => {
-  const url = window.location.search;
-url = url.replace("?varName=", ''); // remove the ?
-console.log('lllllllllllll',url);
-    const abc = url;
-   console.log('kkkkkkkkkkkkkk',abc);
+  
   console.log('i am in haiku');
   const adj = adjs[Math.floor(Math.random() * adjs.length)];
   const noun = nouns[Math.floor(Math.random() * nouns.length)];
