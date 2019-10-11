@@ -36,7 +36,7 @@ console.log('lllllllllllll',url);
   const MIN = 1000;
   const MAX = 9999;
   const num = Math.floor(Math.random() * ((MAX + 1) - MIN)) + MIN;
-  const abc = 'saasnic';
+  
  return `${adj}-${noun}-${num}`;
   
 };
