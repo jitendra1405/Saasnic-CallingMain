@@ -28,7 +28,7 @@ const nouns = [
 module.exports = () => {
   
   console.log('i am in haiku');
-  const current_url = new URL('https://saasnicwebrtc.herokuapp.com/?varName=$user');
+  const current_url = new URL('https://saasnicwebrtc.herokuapp.com/?varName=');
 const search_params = current_url.searchParams;
 
 
