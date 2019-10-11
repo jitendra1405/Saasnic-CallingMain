@@ -1,3 +1,5 @@
+const http = require('http');
+const url = require('url');
 const adjs = [
   'autumn', 'hidden', 'bitter', 'misty', 'silent', 'empty', 'dry', 'dark',
   'summer', 'icy', 'delicate', 'quiet', 'white', 'cool', 'spring', 'winter',
@@ -26,14 +28,26 @@ const nouns = [
 
 
 module.exports = () => {
-  
-  console.log('i am in haiku');
-  const current_url = new URL('https://saasnicwebrtc.herokuapp.com/?varName=');
-const search_params = current_url.searchParams;
+   console.log('i am in haiku');
 
 
-const id = search_params.get('varName');
-console.log('ooooooooooooo',id);
+const server = http.createServer((request, response) => {
+    // this is the request url
+    let request_url = request.url;
+
+    // routing
+    if(request.method === 'GET' && request_url === '/form') {
+        const current_url = new URL(request_url);
+        const search_params = current_url.searchParams;
+
+        // "page_no" parameter
+        if(search_params.has('varName'))
+            const page_no = search_params.get('varName');
+      console.log('oooooooooooooo', page_no);
+
+    }
+});
+
    const adj = adjs[Math.floor(Math.random() * adjs.length)];
   const noun = nouns[Math.floor(Math.random() * nouns.length)];
   const MIN = 1000;
