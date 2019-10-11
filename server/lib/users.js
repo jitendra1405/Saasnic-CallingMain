@@ -1,6 +1,6 @@
 /* eslint-disable no-await-in-loop */
 const haiku = require('./haiku');
-
+const app = express();
 const users = {};
 
  app.get('/', (req, res) => {
