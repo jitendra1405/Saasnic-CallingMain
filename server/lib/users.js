@@ -3,7 +3,7 @@ const haiku = require('./haiku');
 
 const users = {};
 
-   
+ 
   
 
 
@@ -11,6 +11,11 @@ const users = {};
 async function randomID() {
   
   console.log('i am in server.js');
+  const url = window.location.search;
+url = url.replace("?varName=", ''); // remove the ?
+console.log('lllllllllllll',url);
+    const abc = url;
+   console.log('kkkkkkkkkkkkkk',abc);  
   let id = haiku();
   while (id in users) {
     await Promise.delay(5);
