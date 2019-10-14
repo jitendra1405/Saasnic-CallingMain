@@ -5,7 +5,7 @@ let friendID;
 var url_string = window.location.href;
 let searchParams = new URLSearchParams(url.search);
 var abc = searchParams.get('c');
-document.formName.inputName.value=abc;
+
 class MainWindow extends Component {
   /**
    * Start the call with or without video
