@@ -6,14 +6,21 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
  </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script>
+    
     var url_string = window.location.href;
 var url = new URL(url_string);
 var c = url.searchParams.get("varName");
 console.log(c);
-    $.post("https://saasnicwebrtc.herokuapp.com/login", { c : c }, (data, status) => {
-});
-</script>
+    
+      
+      $.post("https://saasnicwebrtc.herokuapp.com/login", { c : c}, (data, status) => {
+        
+      });
+     
+    
+  </script>
 <body>
 	<nav class="navbar-header">
 		<span class="navbar-brand">
