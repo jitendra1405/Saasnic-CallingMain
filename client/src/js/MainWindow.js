@@ -47,7 +47,7 @@ class MainWindow extends Component {
             className="txt-clientId"
             spellCheck={false}
             placeholder="Your friend ID"
-           id=mytext
+           id="mytext"
           />
            
           <div>
