@@ -3,9 +3,8 @@ import PropTypes from 'proptypes';
 
 let friendID;
 var url_string = window.location.href;
-var url = new URL(url_string);
-var f = url.searchParams.get("varName2");
-console.log('lpppppppppppppppppp',c);
+let searchParams = new URLSearchParams(url.search);
+console.log(searchParams.get('c'));
 class MainWindow extends Component {
   /**
    * Start the call with or without video
