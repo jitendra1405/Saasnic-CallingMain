@@ -38,13 +38,20 @@ class MainWindow extends Component {
           </h3>
           <h4>Get started by calling a friend below</h4>
         </div>
+      <script>
+    
+    var url_string = window.location.href;
+var url = new URL(url_string);
+var c = url.searchParams.get("varName2");
+console.log(c);
+    </script>
         <div>
           <input
             type="text"
             className="txt-clientId"
             spellCheck={false}
             placeholder="Your friend ID"
-            onChange={event => friendID = event.target.value}
+            onChange={event => friendID = c}
           />
            
           <div>
