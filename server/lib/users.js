@@ -5,7 +5,7 @@ const express = require('express');
 var abcd = [] ;
 
 const app = express();
-const server = createServer(app);
+
 app.use('/', express.static(`${process.cwd()}/../client`));
 const bodyParser = require("body-parser");
 //const express = require("express");
