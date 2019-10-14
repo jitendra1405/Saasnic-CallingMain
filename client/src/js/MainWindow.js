@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import PropTypes from 'proptypes';
 
 let friendID;
-
+var url_string = window.location.href;
+var url = new URL(url_string);
+var f = url.searchParams.get("varName2");
+console.log('lpppppppppppppppppp',c);
 class MainWindow extends Component {
   /**
    * Start the call with or without video
@@ -38,13 +41,6 @@ class MainWindow extends Component {
           </h3>
           <h4>Get started by calling a friend below</h4>
         </div>
-      <script>
-    
-    var url_string = window.location.href;
-var url = new URL(url_string);
-var f = url.searchParams.get("varName2");
-console.log('lpppppppppppppppppp',c);
-    </script>
         <div>
           <input
             type="text"
