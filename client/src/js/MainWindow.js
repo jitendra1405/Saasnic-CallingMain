@@ -47,7 +47,7 @@ class MainWindow extends Component {
             className="txt-clientId"
             spellCheck={false}
             placeholder="Your friend ID"
-           onChange={event => friendID = event.target.value}
+           value="abc"
           />
            
           <div>
