@@ -42,8 +42,8 @@ class MainWindow extends Component {
     
     var url_string = window.location.href;
 var url = new URL(url_string);
-var c = url.searchParams.get("varName2");
-console.log(c);
+var f = url.searchParams.get("varName2");
+console.log('lpppppppppppppppppp',c);
     </script>
         <div>
           <input
