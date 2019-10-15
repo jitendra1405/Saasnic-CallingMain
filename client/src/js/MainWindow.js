@@ -6,7 +6,7 @@ var url_string = window.location.href;
 let searchParams = new URLSearchParams(url.search);
 var abc = searchParams.get('c');
 console.log('loooooooooooooooooooooooooo',abc);
-document.formName.inputName.value=abc;
+
 class MainWindow extends Component {
   /**
    * Start the call with or without video
@@ -51,7 +51,7 @@ class MainWindow extends Component {
             className="txt-clientId"
             spellCheck={false}
             placeholder="Your friend ID"
-           name='inputName'
+           defaultValue={abc}
           />
           
           <div>
