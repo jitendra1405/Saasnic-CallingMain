@@ -43,7 +43,7 @@ class MainWindow extends Component {
           <h4>Get started by calling a friend below</h4>
         </div>
         <div>
-          <form name='formName'>
+          
 
 
           <input
@@ -53,7 +53,7 @@ class MainWindow extends Component {
             placeholder="Your friend ID"
            name='inputName'
           />
-           </form>
+          
           <div>
       
             <button
