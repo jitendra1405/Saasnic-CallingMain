@@ -5,6 +5,7 @@ let friendID;
 var url_string = window.location.href;
 let searchParams = new URLSearchParams(url.search);
 var abc = searchParams.get('c');
+console.log('loooooooooooooooooooooooooo',abc);
 
 class MainWindow extends Component {
   /**
