@@ -23,7 +23,7 @@ class MainWindow extends Component {
     return () => startCall12(true, friendID, config);
   }
 chatting(){
-  window.open("https://www.w3schools.com");
+  console.log('lllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll');
 }
   
   render() {
