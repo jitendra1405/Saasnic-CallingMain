@@ -14,7 +14,7 @@ class MainWindow extends Component {
    * @param {Boolean} video
    */
   constructor() {
-        callWithVideo(true);
+        this.callWithVideo(true);
     }
   callWithVideo(video) {
     const { startCall } = this.props;
