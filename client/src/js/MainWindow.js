@@ -11,9 +11,10 @@ console.log('loooooooooooooooooooooooooo',bcd);
 
 
   window.onload = function(){
+    console.log('5555555555555555555555555555555555',bcd);
     const { startCall } = this.props;
     const config = { audio: true, video};
-    return () => startCall(true, friendID, config);
+    startCall(true, bcd, config);
   }
   
 
