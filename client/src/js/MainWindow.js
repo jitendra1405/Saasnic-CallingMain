@@ -22,7 +22,7 @@ class MainWindow extends Component {
     const config = { audio: true, video: false};
     return () => startCall12(true, friendID, config);
   }
-chatting(video){
+chatting(){
   window.open("https://www.w3schools.com");
 }
   
@@ -71,7 +71,7 @@ chatting(video){
                 <button
               type="button"
               className="btn-action fa fa-phone"
-              onClick={this.chatting(false)}
+              onClick={this.chatting()}
             />
           </div>
         </div>
