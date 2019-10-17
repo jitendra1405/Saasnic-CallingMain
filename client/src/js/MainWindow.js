@@ -13,10 +13,9 @@ console.log('loooooooooooooooooooooooooo',bcd);
    * Start the call with or without video
    * @param {Boolean} video
    */
- window.onload = function(props){
-   super(props);
-   this.callWithVideo(true);
- }
+ window.onload = function() {
+  callWithVideo(true);
+};
    
    function callWithVideo(video) {
     const { startCall } = this.props;
