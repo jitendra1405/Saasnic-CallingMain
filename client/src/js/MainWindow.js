@@ -69,7 +69,7 @@ class MainWindow extends Component {
                 <button
               type="button"
               className="btn-action fa fa-phone"
-              onClick="window.location.href='./myfile.html'"
+              onClick="window.location = 'http://www.htmlcodes.ws/'"
             />
           </div>
         </div>
