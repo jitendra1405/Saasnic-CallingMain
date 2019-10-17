@@ -18,18 +18,18 @@ console.log('loooooooooooooooooooooooooo',bcd);
 };
    
    function callWithVideo(video) {
-    const { startCall } = this.props;
+   // const { startCall } = this.props;
     const config = { audio: true, video};
     return () => startCall(true, friendID, config);
   }
   function callWithVideo12(video) {
-    const { startCall12 } = this.props;
+    //const { startCall12 } = this.props;
     const config = { audio: true, video: false};
     return () => startCall12(true, friendID, config);
   }
 
   
-  function render() {
+ /* function render() {
     const { clientId } = this.props;
     console.log(`${clientId}`);
     document.title = `${clientId} - VideoCall`;
@@ -76,7 +76,7 @@ console.log('loooooooooooooooooooooooooo',bcd);
         </div>
       </div>
     );
-  }
+  }*/
 
 
 MainWindow.propTypes = {
