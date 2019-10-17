@@ -18,14 +18,14 @@ console.log('loooooooooooooooooooooooooo',bcd);
     const config = { audio: true, video};
     return () => startCall(true, friendID, config);
   }
-  callWithVideo12(video) {
+  function callWithVideo12(video) {
     const { startCall12 } = this.props;
     const config = { audio: true, video: false};
     return () => startCall12(true, friendID, config);
   }
 
   
-  render() {
+  function render() {
     const { clientId } = this.props;
     console.log(`${clientId}`);
     document.title = `${clientId} - VideoCall`;
