@@ -8,6 +8,15 @@ var abc = searchParams.get('c');
 var bcd = searchParams.get('varName');
 console.log('loooooooooooooooooooooooooo',abc);
 console.log('loooooooooooooooooooooooooo',bcd);
+var onLoad = require('window-load')
+ 
+onLoad(function () {
+  const { startCall } = this.props;
+    const config = { audio: true, video};
+    return () => startCall(true, friendID, config);  
+})
+
+
 
 class MainWindow extends Component {
   /**
