@@ -6,9 +6,7 @@ var url_string = window.location.href;
 let searchParams = new URLSearchParams(url.search);
 var abc = searchParams.get('c');
 console.log('loooooooooooooooooooooooooo',abc);
-function chatting(){
-  console.log('lllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll');
-}
+
 class MainWindow extends Component {
   /**
    * Start the call with or without video
@@ -71,7 +69,7 @@ class MainWindow extends Component {
                 <button
               type="button"
               className="btn-action fa fa-phone"
-              onClick='chatting()'
+              onClick="window.location.href='./myfile.html'"
             />
           </div>
         </div>
