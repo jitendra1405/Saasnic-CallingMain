@@ -9,29 +9,24 @@ var bcd = searchParams.get('varName');
 console.log('loooooooooooooooooooooooooo',abc);
 console.log('loooooooooooooooooooooooooo',bcd);
 
+class MainWindow extends Component {
   /**
    * Start the call with or without video
    * @param {Boolean} video
    */
- constructor(props) {
-     
-    super(props);
-    this.callWithVideo(true);
- }
-   
-   function callWithVideo(video) {
-   const { startCall } = this.props;
+  callWithVideo(video) {
+    const { startCall } = this.props;
     const config = { audio: true, video};
     return () => startCall(true, friendID, config);
   }
-  function callWithVideo12(video) {
-    //const { startCall12 } = this.props;
+  callWithVideo12(video) {
+    const { startCall12 } = this.props;
     const config = { audio: true, video: false};
     return () => startCall12(true, friendID, config);
   }
 
   
-  function render() {
+  render() {
     const { clientId } = this.props;
     console.log(`${clientId}`);
     document.title = `${clientId} - VideoCall`;
@@ -79,7 +74,7 @@ console.log('loooooooooooooooooooooooooo',bcd);
       </div>
     );
   }
-
+}
 
 MainWindow.propTypes = {
   clientId: PropTypes.string.isRequired,
