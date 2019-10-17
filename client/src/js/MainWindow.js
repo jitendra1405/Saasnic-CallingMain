@@ -23,74 +23,43 @@ class MainWindow extends Component {
     return () => startCall12(true, friendID, config);
   }
 chatting(video){
-     resp.writeHead(200, { 'Content-Type': 'text/html' });
-     resp.write('<html>
-<head>
-  <title>Simple Chat via Piping Server</title>
-  <style>
-    body, input, button {
-      font-size: 20px;
+  const createModal = (htmlFile, parentWindow, width, height) => {
+  let modal = new BrowserWindow({
+    width: width,
+    height: height,
+    modal: true,
+    parent: parentWindow,
+    webPreferences: {
+      nodeIntegration: true
     }
-    .me {
-      text-align: right;
-    }
-  </style>
-</head>
-<body>
-  <p>
-    <input placeholder="Your ID" id='your_id'>
-    <input placeholder="Peer ID" id='peer_id'>
-    <button onclick='receiveLoop(this)'>Connect</button>
-  </p>
-  <p style='position: absolute; bottom: 0;'>
-    <input placeholder="Message" id='message' size='50'>
-    <button onclick="send()">Send</button>
-  </p>
+  })
 
-  <hr>
-  <div id='talks'>
-    <!--This will be added by JavaScript -->
-  </div>
-  <script>
-    // Receive-loop
-    async function receiveLoop(btn) {
-      your_id.disabled = peer_id.disabled = btn.disabled = true;
-      while(true) {
-        try {
-          // Get peer's response
-          const res = await fetch(`https://ppng.ml/${peer_id.value}-${your_id.value}`);
-          // Create talk element
-          const talk = document.createElement('div');
-          // Set peer's message
-          talk.innerText = await res.text();
-          // Add peer's message
-          talks.appendChild(talk);
-        } catch(err) {
-          console.error(err);
+  modal.loadFile(htmlFile)
+
+  return modal;
+
+}
+
+const {Menu} = require('electron');
+
+const nativeMenus = [
+  {
+      label: 'About',
+      submenu: [
+          {
+            label: 'About',
+             click () {
+
+              createModal("myfile.html",win,600,800); // Win is the browerwindow instance
+
+            }
         }
-      }
-    }
+    ]
+  }
+]
 
-    // Send your message
-    function send() {
-      // Send your message
-      fetch(`https://ppng.ml/${your_id.value}-${peer_id.value}`, {
-        'method': 'POST',
-        body: message.value
-      });
-      // Create talk element
-      const talk = document.createElement('div');
-      talk.innerText = message.value;
-      talk.classList.add('me');
-      talks.appendChild(talk);
-      // Empty your message
-      message.value = '';
-    }
-  </script>
-</body>
-<html>');
-    resp.end();
-       
+const menu = Menu.buildFromTemplate(nativeMenus);
+Menu.setApplicationMenu(menu);
 
 }
   
