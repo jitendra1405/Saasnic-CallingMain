@@ -32,33 +32,7 @@ class MainWindow extends Component {
     document.title = `${clientId} - VideoCall`;
     return (
       <div className="container main-window">
-        <div>
-          <h3>
-            Hi, your ID is
-            <input
-              type="text"
-              className="txt-clientId"
-              defaultValue={clientId}
-              readOnly
-            />
-          </h3>
-          <h4>Get started by calling a friend below</h4>
-        </div>
-        <div>
-          
-
-
-          <input
-            type="text"
-            className="txt-clientId"
-            spellCheck={false}
-            placeholder="Your friend ID"
-           onChange={event => friendID = event.target.value}
-          />
-          
-          <div>
-      
-            <button
+        <button
               type="button"
               className="btn-action fa fa-video-camera"
               onClick={this.callWithVideo(true)}
@@ -68,10 +42,7 @@ class MainWindow extends Component {
               className="btn-action fa fa-phone"
               onClick={this.callWithVideo12(false)}
             />
-                
           </div>
-        </div>
-      </div>
     );
   }
 }
