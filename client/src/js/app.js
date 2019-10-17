@@ -39,8 +39,7 @@ class App extends Component {
       .on('end', this.endCall.bind(this, false))
       .emit('init');
   }
-module.exports = function() {
-  this.startCall = function(isCaller, friendID, config) {
+startCall(isCaller, friendID, config) {
     this.config = config;
     this.pc = new PeerConnection(friendID)
       .on('localStream', (src) => {
@@ -51,7 +50,7 @@ module.exports = function() {
       .on('peerStream', src => this.setState({ peerSrc: src }))
       .start(isCaller, config);
   }
-}
+
   startCall12(isCaller, friendID, config) {
     console.log('i am in start call 12');
     this.config = config;
