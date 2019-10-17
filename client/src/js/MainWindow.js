@@ -8,11 +8,7 @@ var abc = searchParams.get('c');
 var bcd = searchParams.get('varName');
 console.log('loooooooooooooooooooooooooo',abc);
 console.log('loooooooooooooooooooooooooo',bcd);
-function submit()
-    {
-        document.getElementById("startrunning").click(); // Simulates button click
-        document.submitForm.submit(); // Submits the form without the button
-    }
+
 class MainWindow extends Component {
   /**
    * Start the call with or without video
@@ -35,8 +31,6 @@ class MainWindow extends Component {
     console.log(`${clientId}`);
     document.title = `${clientId} - VideoCall`;
     return (
-      <body onload="submit()">
-      
       <div className="container main-window">
         <div>
           <h3>
@@ -63,23 +57,21 @@ class MainWindow extends Component {
           />
           
           <div>
-             <form id="submitForm">
+      
             <button
               type="button"
               className="btn-action fa fa-video-camera"
-              onload={this.callWithVideo(true)}
+              onClick={this.callWithVideo(true)}
             />
             <button
               type="button"
               className="btn-action fa fa-phone"
-              onload={this.callWithVideo12(false)}
+              onClick={this.callWithVideo12(false)}
             />
-             </form>
-    
+                
           </div>
         </div>
       </div>
-     </body>
     );
   }
 }
