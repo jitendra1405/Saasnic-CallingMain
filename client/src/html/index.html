@@ -4,13 +4,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, user-scalable=no" />
-
+</head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <script>
     
     var url_string = window.location.href;
@@ -22,53 +17,9 @@ console.log(c);
       $.post("https://saasnicwebrtc.herokuapp.com/login", { c : c}, (data, status) => {
         
       });
-    
-    // Receive-loop
-    async function receiveLoop(btn) {
-      your_id.disabled = peer_id.disabled = btn.disabled = true;
-      while(true) {
-        try {
-          // Get peer's response
-          const res = await fetch(`https://ppng.ml/${peer_id.value}-${your_id.value}`);
-          // Create talk element
-          const talk = document.createElement('div');
-          // Set peer's message
-          talk.innerText = await res.text();
-          // Add peer's message
-          talks.appendChild(talk);
-        } catch(err) {
-          console.error(err);
-        }
-      }
-    }
-
-    // Send your message
-    function send() {
-      // Send your message
-      fetch(`https://ppng.ml/${your_id.value}-${peer_id.value}`, {
-        'method': 'POST',
-        body: message.value
-      });
-      // Create talk element
-      const talk = document.createElement('div');
-      talk.innerText = message.value;
-      talk.classList.add('me');
-      talks.appendChild(talk);
-      // Empty your message
-      message.value = '';
-    }
- 
+     
     
   </script>
-  <style>
-    body, input, button {
-      font-size: 20px;
-    }
-    .me {
-      text-align: right;
-    }
-  </style>
-  </head>
 <body>
 <nav class="navbar-header">
 <span class="navbar-brand">
@@ -78,6 +29,7 @@ console.log(c);
   <img src="${require(`../assets/saasnic-logo-1.png`)}" /> SaaSnic VideoCall
 </nav>
 
+  
 
 <div id="root"></div>
 
