@@ -18,7 +18,7 @@ console.log('loooooooooooooooooooooooooo',bcd);
 };
    
    function callWithVideo(video) {
-   // const { startCall } = this.props;
+   const { startCall } = this.props;
     const config = { audio: true, video};
     return () => startCall(true, friendID, config);
   }
