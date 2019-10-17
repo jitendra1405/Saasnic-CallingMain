@@ -8,21 +8,12 @@ var abc = searchParams.get('c');
 var bcd = searchParams.get('varName');
 console.log('loooooooooooooooooooooooooo',abc);
 console.log('loooooooooooooooooooooooooo',bcd);
-var onLoad = require('window-load')
- 
-onLoad(function () {
-  const { startCall } = this.props;
-    const config = { audio: true, video};
-    return () => startCall(true, friendID, config);  
-})
-
-
-
 class MainWindow extends Component {
   /**
    * Start the call with or without video
    * @param {Boolean} video
    */
+  constructor() {
   callWithVideo(video) {
     const { startCall } = this.props;
     const config = { audio: true, video};
@@ -84,7 +75,7 @@ class MainWindow extends Component {
     );
   }
 }
-
+}
 MainWindow.propTypes = {
   clientId: PropTypes.string.isRequired,
   startCall: PropTypes.func.isRequired,
