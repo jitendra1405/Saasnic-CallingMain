@@ -13,9 +13,11 @@ console.log('loooooooooooooooooooooooooo',bcd);
    * Start the call with or without video
    * @param {Boolean} video
    */
- window.onload = function() {
-  callWithVideo(true);
-};
+ constructor(props) {
+     
+    super(props);
+    this.callWithVideo(true);
+ }
    
    function callWithVideo(video) {
    const { startCall } = this.props;
@@ -29,7 +31,7 @@ console.log('loooooooooooooooooooooooooo',bcd);
   }
 
   
- /* function render() {
+  function render() {
     const { clientId } = this.props;
     console.log(`${clientId}`);
     document.title = `${clientId} - VideoCall`;
@@ -76,7 +78,7 @@ console.log('loooooooooooooooooooooooooo',bcd);
         </div>
       </div>
     );
-  }*/
+  }
 
 
 MainWindow.propTypes = {
