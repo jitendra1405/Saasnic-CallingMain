@@ -6,7 +6,9 @@ var url_string = window.location.href;
 let searchParams = new URLSearchParams(url.search);
 var abc = searchParams.get('c');
 console.log('loooooooooooooooooooooooooo',abc);
-
+function chatting(){
+  console.log('lllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll');
+}
 class MainWindow extends Component {
   /**
    * Start the call with or without video
@@ -22,9 +24,7 @@ class MainWindow extends Component {
     const config = { audio: true, video: false};
     return () => startCall12(true, friendID, config);
   }
-chatting(){
-  console.log('lllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll');
-}
+
   
   render() {
     const { clientId } = this.props;
@@ -71,7 +71,7 @@ chatting(){
                 <button
               type="button"
               className="btn-action fa fa-phone"
-              onClick={this.chatting()}
+              onClick='chatting()'
             />
           </div>
         </div>
