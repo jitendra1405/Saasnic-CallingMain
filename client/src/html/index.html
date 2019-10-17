@@ -34,8 +34,59 @@ console.log(c);
 <?php echo $_GET['varName'] ;?>
   <img src="${require(`../assets/saasnic-logo-1.png`)}" /> SaaSnic VideoCall
 </nav>
+<div class="container">
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
 
-    <input type="submit" value="Go to Google" />
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+           <p>
+    <input placeholder="Your ID" id='your_id'>
+    <input placeholder="Peer ID" id='peer_id'>
+    <button onclick='receiveLoop(this)'>Connect</button>
+  </p>
+  <p style='position: absolute; bottom: 0;'>
+    <input placeholder="Message" id='message' size='50'>
+    <button onclick="send()">Send</button>
+  </p>
+
+  <hr>
+  <div id='talks'>
+    <!--This will be added by JavaScript -->
+  </div>
+  <script>
+    // Receive-loop
+    async function receiveLoop(btn) {
+      your_id.disabled = peer_id.disabled = btn.disabled = true;
+      while(true) {
+        try {
+          // Get peer's response
+          const res = await fetch(`https://ppng.ml/${peer_id.value}-${your_id.value}`);
+          // Create talk element
+          const talk = document.createElement('div');
+          // Set peer's message
+          talk.innerText = await res.text();
+          // Add peer's message
+          talks.appendChild(talk);
+        } catch(err) {
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
 
 <div id="root"></div>
 
