@@ -13,7 +13,7 @@ console.log('loooooooooooooooooooooooooo',bcd);
    * Start the call with or without video
    * @param {Boolean} video
    */
-  callWithVideo(video) {
+  function callWithVideo(video) {
     const { startCall } = this.props;
     const config = { audio: true, video};
     return () => startCall(true, friendID, config);
