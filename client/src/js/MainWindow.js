@@ -8,14 +8,11 @@ var abc = searchParams.get('c');
 var bcd = searchParams.get('varName');
 console.log('loooooooooooooooooooooooooo',abc);
 console.log('loooooooooooooooooooooooooo',bcd);
-class MainWindow extends Component {
+
   /**
    * Start the call with or without video
    * @param {Boolean} video
    */
-  constructor() {
-    {this.callWithVideo(true);}
-    }
   callWithVideo(video) {
     const { startCall } = this.props;
     const config = { audio: true, video};
@@ -76,7 +73,7 @@ class MainWindow extends Component {
       </div>
     );
   }
-}
+
 
 MainWindow.propTypes = {
   clientId: PropTypes.string.isRequired,
