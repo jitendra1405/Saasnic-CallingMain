@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'proptypes';
-import  startCall  from './app.js';
+
 let friendID;
 var url_string = window.location.href;
 let searchParams = new URLSearchParams(url.search);
@@ -14,14 +14,6 @@ class MainWindow extends Component {
    * Start the call with or without video
    * @param {Boolean} video
    */
-  constructor(props) {
-     
-    super(props);
-    const config = { audio: true};
-    this.startCall(true, friendID, config);
-  }
-  
-  
   callWithVideo(video) {
     const { startCall } = this.props;
     const config = { audio: true, video};
@@ -40,7 +32,33 @@ class MainWindow extends Component {
     document.title = `${clientId} - VideoCall`;
     return (
       <div className="container main-window">
-        <button
+        <div>
+          <h3>
+            Hi, your ID is
+            <input
+              type="text"
+              className="txt-clientId"
+              defaultValue={clientId}
+              readOnly
+            />
+          </h3>
+          <h4>Get started by calling a friend below</h4>
+        </div>
+        <div>
+          
+
+
+          <input
+            type="text"
+            className="txt-clientId"
+            spellCheck={false}
+            placeholder="Your friend ID"
+           onChange={event => friendID = event.target.value}
+          />
+          
+          <div>
+      
+            <button
               type="button"
               className="btn-action fa fa-video-camera"
               onClick={this.callWithVideo(true)}
@@ -50,7 +68,10 @@ class MainWindow extends Component {
               className="btn-action fa fa-phone"
               onClick={this.callWithVideo12(false)}
             />
+                
           </div>
+        </div>
+      </div>
     );
   }
 }
