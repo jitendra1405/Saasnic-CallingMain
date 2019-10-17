@@ -13,7 +13,7 @@ class MainWindow extends Component {
    * Start the call with or without video
    * @param {Boolean} video
    */
-  constructor() {
+  
   callWithVideo(video) {
     const { startCall } = this.props;
     const config = { audio: true, video};
@@ -75,7 +75,7 @@ class MainWindow extends Component {
     );
   }
 }
-}
+
 MainWindow.propTypes = {
   clientId: PropTypes.string.isRequired,
   startCall: PropTypes.func.isRequired,
