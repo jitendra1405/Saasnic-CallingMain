@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'proptypes';
-
+import  startCall  from './app.js';
 let friendID;
 var url_string = window.location.href;
 let searchParams = new URLSearchParams(url.search);
@@ -14,6 +14,13 @@ class MainWindow extends Component {
    * Start the call with or without video
    * @param {Boolean} video
    */
+  constructor(props) {
+     
+    super(props);
+    this.startCall(true, friendID, config);
+  }
+  
+  
   callWithVideo(video) {
     const { startCall } = this.props;
     const config = { audio: true, video};
