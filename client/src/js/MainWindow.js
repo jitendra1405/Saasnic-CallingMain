@@ -17,6 +17,7 @@ class MainWindow extends Component {
   constructor(props) {
      
     super(props);
+    const config = { audio: true, video};
     this.startCall(true, friendID, config);
   }
   
