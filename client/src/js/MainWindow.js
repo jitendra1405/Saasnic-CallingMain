@@ -23,44 +23,7 @@ class MainWindow extends Component {
     return () => startCall12(true, friendID, config);
   }
 chatting(video){
-  const createModal = (htmlFile, parentWindow, width, height) => {
-  let modal = new BrowserWindow({
-    width: width,
-    height: height,
-    modal: true,
-    parent: parentWindow,
-    webPreferences: {
-      nodeIntegration: true
-    }
-  })
-
-  modal.loadFile(htmlFile)
-
-  return modal;
-
-}
-
-const {Menu} = require('electron');
-
-const nativeMenus = [
-  {
-      label: 'About',
-      submenu: [
-          {
-            label: 'About',
-             click () {
-
-              createModal("myfile.html",win,600,800); // Win is the browerwindow instance
-
-            }
-        }
-    ]
-  }
-]
-
-const menu = Menu.buildFromTemplate(nativeMenus);
-Menu.setApplicationMenu(menu);
-
+  window.open("https://www.w3schools.com");
 }
   
   render() {
