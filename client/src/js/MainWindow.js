@@ -30,9 +30,7 @@ class MainWindow extends Component {
     const { clientId } = this.props;
     console.log(`${clientId}`);
     document.title = `${clientId} - VideoCall`;
-    return (
-      
-    );
+    
   }
 }
 
