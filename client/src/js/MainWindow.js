@@ -66,11 +66,7 @@ class MainWindow extends Component {
               className="btn-action fa fa-phone"
               onClick={this.callWithVideo12(false)}
             />
-                <button
-              type="button"
-              className="btn-action fa fa-phone"
-              onClick="window.location = 'http://www.htmlcodes.ws/'"
-            />
+                
           </div>
         </div>
       </div>
