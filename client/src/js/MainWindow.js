@@ -5,6 +5,7 @@ var url_string = window.location.href;
 let searchParams = new URLSearchParams(url.search);
 var abc = searchParams.get('FriendId');
 var bcd = searchParams.get('varName');
+var a = 'https://jitendra1405.github.io/Saasnic-CallingMain/client/src/html/chatting.html';
 console.log('loooooooooooooooooooooooooo',abc);
 console.log('loooooooooooooooooooooooooo',bcd);
 class MainWindow extends Component {
@@ -46,7 +47,7 @@ return (
          <button type="button" className="btn-action fa fa-phone"  onClick={this.callWithVideo12(false)}  />
          
 		 
-		 <a href="javascript:window.open('https://jitendra1405.github.io/Saasnic-CallingMain/client/src/html/chatting.html?varName="+bcd+"&fid="+abc"','mywindowtitle','top=250,left=950,width=400,height=400,toolbar=no,scrollbars=no,location=no,resizable =no')" class="btn-action fa fa-phone"></a>
+		 <a href="javascript:window.open(a+'?varName='+bcd+'&fid='+abc,'mywindowtitle','top=250,left=950,width=400,height=400,toolbar=no,scrollbars=no,location=no,resizable =no')" class="btn-action fa fa-phone"></a>
       </div>
    </div>
 </div>
