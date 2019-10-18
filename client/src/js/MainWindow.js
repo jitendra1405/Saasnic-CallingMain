@@ -32,13 +32,13 @@ return (
       <h4>Hey User Name</h4>
    </div>
    <div class="call-box">
-      <h3>
-         Hi, your ID is
+      
          <input type="text" className="txt-clientId" defaultValue={clientId} readOnly />
-      </h3>
       
       <input type="text" className="txt-clientId" spellCheck={false} placeholder="Your friend ID" onChange={event => friendID = event.target.value}/>
-      <div>
+      
+	  
+	  <div>
 	  
 	  <h4>Get started by calling a friend below</h4>
 	  
