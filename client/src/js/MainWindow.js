@@ -68,7 +68,8 @@ class MainWindow extends Component {
               className="btn-action fa fa-phone"
               onClick={this.callWithVideo12(false)}
             />
-            <a href="https://jitendra1405.github.io/Saasnic-CallingMain/client/src/html/chatting.html" class="btn-action fa fa-phone" target="_blank"/>    
+            <a href="../chatting.htm" target="popup" onclick="window.open('../html-link.htm','name','width=600,height=400')" class="btn-action fa fa-phone"></a>
+               
           </div>
         </div>
       </div>
