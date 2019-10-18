@@ -3,7 +3,7 @@ import PropTypes from 'proptypes';
 let friendID;
 var url_string = window.location.href;
 let searchParams = new URLSearchParams(url.search);
-var abc = searchParams.get('c');
+var abc = searchParams.get('FriendId');
 var bcd = searchParams.get('varName');
 console.log('loooooooooooooooooooooooooo',abc);
 console.log('loooooooooooooooooooooooooo',bcd);
@@ -35,7 +35,7 @@ return (
       
          <input type="text" className="txt-clientId" defaultValue={clientId} readOnly />
       
-      <input type="text" className="txt-clientId" spellCheck={false} placeholder="Your friend ID" onChange={event => friendID = event.target.value}/>
+      <input type="text" className="txt-clientId" spellCheck={false} placeholder="Your friend ID" defaultValue={abc} />
       
 	  
 	  <div>
