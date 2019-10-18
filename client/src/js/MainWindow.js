@@ -6,7 +6,7 @@ let searchParams = new URLSearchParams(url.search);
 
 var bcd = searchParams.get('varName');
 var abc = searchParams.get('FriendId');
-
+export { abc };
    
 
 
