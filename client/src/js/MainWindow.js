@@ -49,7 +49,9 @@ return (
 	  
          <button type="button"className="btn-action fa fa-video-camera" onClick={this.callWithVideo(true)} />
          <button type="button" className="btn-action fa fa-phone"  onClick={this.callWithVideo12(false)}  />
-    		 <a href="https://jitendra1405.github.io/Saasnic-CallingMain/client/src/html/chatting.html" class="btn-action fa fa-commenting-o"></a>
+    		 <input type="button" onClick="window.location='https://jitendra1405.github.io/Saasnic-CallingMain/client/src/html/chatting.html?var=<?php echo $abc ?>'" class="btn-action fa fa-commenting-o">
+           
+         
      
 	 
       </div>
