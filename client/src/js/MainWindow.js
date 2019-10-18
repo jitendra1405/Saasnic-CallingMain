@@ -47,7 +47,7 @@ return (
          <button type="button" className="btn-action fa fa-phone"  onClick={this.callWithVideo12(false)}  />
          
 		  
-		 <a href='javascript:window.open(a,'mywindowtitle',"top=250,left=950,width=400,height=400,toolbar=no,scrollbars=no,location=no,resizable =no")' class="btn-action fa fa-phone"></a>
+		 <a href='javascript:window.open(a,"mywindowtitle","top=250,left=950,width=400,height=400,toolbar=no,scrollbars=no,location=no,resizable =no")' class="btn-action fa fa-phone"></a>
       </div>
    </div>
 </div>
