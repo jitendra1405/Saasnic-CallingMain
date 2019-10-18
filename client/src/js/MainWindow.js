@@ -8,6 +8,9 @@ var bcd = searchParams.get('varName');
 
 console.log('loooooooooooooooooooooooooo',abc);
 console.log('loooooooooooooooooooooooooo',bcd);
+function chatting(){
+  window.open('https://jitendra1405.github.io/Saasnic-CallingMain/client/src/html/chatting.html?varName=abc','mywindowtitle','top=250,left=950,width=400,height=400');
+}
 
 class MainWindow extends Component {
 /**
@@ -46,7 +49,7 @@ return (
 	  
          <button type="button"className="btn-action fa fa-video-camera" onClick={this.callWithVideo(true)} />
          <button type="button" className="btn-action fa fa-phone"  onClick={this.callWithVideo12(false)}  />
-    		 
+    		 <button type="button" onclick="chatting()" class="btn-action fa fa-phone" />
       </div>
    </div>
 </div>
