@@ -8,10 +8,7 @@ var bcd = searchParams.get('varName');
 
 console.log('loooooooooooooooooooooooooo',abc);
 console.log('loooooooooooooooooooooooooo',bcd);
-function chatting(){
-  var abc = searchParams.get('FriendId');
-  window.open('https://jitendra1405.github.io/Saasnic-CallingMain/client/src/html/chatting.html?varName='+abc,'mywindowtitle','top=250,left=950,width=400,height=400');
-}
+
 
 class MainWindow extends Component {
 /**
@@ -24,7 +21,8 @@ const config = { audio: true, video};
 return () => startCall(true, abc, config);
 }
 chatting(){
-  window.open('https://jitendra1405.github.io/Saasnic-CallingMain/client/src/html/chatting.html?varName=abc','mywindowtitle','top=250,left=950,width=400,height=400');
+  var abc = searchParams.get('FriendId');
+  window.open('https://jitendra1405.github.io/Saasnic-CallingMain/client/src/html/chatting.html?varName='+abc,'mywindowtitle','top=250,left=950,width=400,height=400');
 }
 callWithVideo12(video) {
 const { startCall12 } = this.props;
