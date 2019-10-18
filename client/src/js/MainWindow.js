@@ -33,6 +33,10 @@ class MainWindow extends Component {
     return (
        <div className="main-window">
         <div class="call-box">
+			<div class="user-display">
+				<h4>Hey User Name</h4>
+			</div>
+          
           <h3>
             Hi, your ID is
             <input
