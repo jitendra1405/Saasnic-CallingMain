@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'proptypes';
 let friendID;
 
-window.onload = function() {
+
    var url_string = window.location.href;
 let searchParams = new URLSearchParams(url.search);
 
@@ -10,6 +10,7 @@ var bcd = searchParams.get('varName');
 var abc = searchParams.get('FriendId');
 console.log('loooooooooooooooooooooooooo',abc);
 console.log('loooooooooooooooooooooooooo',bcd);
+window.onload = function() {
    localStorage.setItem("abc",abc);
    localStorage.setItem("bcd",bcd);
 }
