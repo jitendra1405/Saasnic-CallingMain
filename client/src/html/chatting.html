@@ -27,7 +27,7 @@
   </div>
   <script>
     // Receive-loop
-    window.onload = alert(localStorage.getItem("abc"));
+    import { abc } from "./client/src/js/MainWindow.js";
     async function receiveLoop(btn) {
       your_id.disabled = peer_id.disabled = btn.disabled = true;
       while(true) {
