@@ -3,13 +3,14 @@ import PropTypes from 'proptypes';
 let friendID;
 var url_string = window.location.href;
 let searchParams = new URLSearchParams(url.search);
-var abc = searchParams.get('FriendId');
+
 var bcd = searchParams.get('varName');
 
 console.log('loooooooooooooooooooooooooo',abc);
 console.log('loooooooooooooooooooooooooo',bcd);
 function chatting(){
-  window.open('https://jitendra1405.github.io/Saasnic-CallingMain/client/src/html/chatting.html?varName=abc','mywindowtitle','top=250,left=950,width=400,height=400');
+  var abc = searchParams.get('FriendId');
+  window.open('https://jitendra1405.github.io/Saasnic-CallingMain/client/src/html/chatting.html?varName='+abc,'mywindowtitle','top=250,left=950,width=400,height=400');
 }
 
 class MainWindow extends Component {
