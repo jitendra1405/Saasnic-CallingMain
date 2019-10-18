@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
 import PropTypes from 'proptypes';
 let friendID;
+var url_string = window.location.href;
+let searchParams = new URLSearchParams(url.search);
 
+var bcd = searchParams.get('varName');
+var abc = searchParams.get('FriendId');
 
    
 
 window.onload = function() {
-const url_string = window.location.href;
-let searchParams = new URLSearchParams(url.search);
-
-const bcd = searchParams.get('varName');
-const abc = searchParams.get('FriendId');
-   localStorage.setItem("abc",abc);
+   localStorage.setItem("abc",'abc');
    localStorage.setItem("bcd",bcd);
 }
 
