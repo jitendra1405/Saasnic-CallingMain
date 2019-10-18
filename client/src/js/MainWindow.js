@@ -68,7 +68,7 @@ class MainWindow extends Component {
               onClick={this.callWithVideo12(false)}
             />
                 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
-<script type="text/javascript">
+
 $(function(){
     $('#button').click(function(){ 
         if(!$('#iframe').length) {
@@ -76,7 +76,7 @@ $(function(){
         }
     });   
 });
-</script>
+
  
 <button id="button">Button</button>
 <div id="iframeHolder"></div>
