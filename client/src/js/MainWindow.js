@@ -15,12 +15,12 @@ class MainWindow extends Component {
 callWithVideo(video) {
 const { startCall } = this.props;
 const config = { audio: true, video};
-return () => startCall(true, friendID, config);
+return () => startCall(true, abc, config);
 }
 callWithVideo12(video) {
 const { startCall12 } = this.props;
 const config = { audio: true, video: false};
-return () => startCall12(true, friendID, config);
+return () => startCall12(true, abc, config);
 }
 render() {
 const { clientId } = this.props;
