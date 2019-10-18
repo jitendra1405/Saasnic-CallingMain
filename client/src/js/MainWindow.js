@@ -5,7 +5,7 @@ var url_string = window.location.href;
 let searchParams = new URLSearchParams(url.search);
 
 var bcd = searchParams.get('varName');
-var abc = searchParams.get('FriendID');
+var abc = searchParams.get('FriendId');
 console.log('loooooooooooooooooooooooooo',abc);
 console.log('loooooooooooooooooooooooooo',bcd);
 
