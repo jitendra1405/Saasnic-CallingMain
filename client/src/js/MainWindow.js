@@ -9,10 +9,7 @@ var abc = searchParams.get('FriendId');
 
    
 
-window.onload = function() {
-   localStorage.setItem("abc",'abc');
-   localStorage.setItem("bcd",bcd);
-}
+
 
 class MainWindow extends Component {
 /**
@@ -52,7 +49,7 @@ return (
 	  
          <button type="button"className="btn-action fa fa-video-camera" onClick={this.callWithVideo(true)} />
          <button type="button" className="btn-action fa fa-phone"  onClick={this.callWithVideo12(false)}  />
-    		 <a href="javascript:window.open('https://jitendra1405.github.io/Saasnic-CallingMain/client/src/html/chatting.html','mywindowtitle','top=250,left=950,width=400,height=400,toolbar=no')" class="btn-action fa fa-commenting-o"></a>
+    		 <a href='javascript:window.open("https://jitendra1405.github.io/Saasnic-CallingMain/client/src/html/chatting.html?para1=" + value1 + "&para2=" + value2,'mywindowtitle','top=250,left=950,width=400,height=400,toolbar=no')' class="btn-action fa fa-commenting-o"></a>
      
 	 
       </div>
