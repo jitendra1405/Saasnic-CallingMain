@@ -23,13 +23,13 @@
 		line-height: $height;
 		text-align: center;
 		border-radius: 50%;
-		border: solid 2px $main-color;
+		border: solid 2px $black;
 		cursor: pointer;
 		transition-duration: 0.25s;
 		background-color: transparent;
 
 		&:hover {
-			background-color: rgba($main-color, 0.2);
+			background-color: rgba($black, 0.2);
 		}
 	}
 
