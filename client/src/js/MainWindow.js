@@ -67,20 +67,8 @@ class MainWindow extends Component {
               className="btn-action fa fa-phone"
               onClick={this.callWithVideo12(false)}
             />
-                <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
-
-$(function(){
-    $('#button').click(function(){ 
-        if(!$('#iframe').length) {
-                $('#iframeHolder').html('<iframe id="iframe" src="https://jitendra1405.github.io/Saasnic-CallingMain/client/src/html/chatting.html" width="700" height="450"></iframe>');
-        }
-    });   
-});
-
- 
-<button id="button">Button</button>
-<div id="iframeHolder"></div>
-
+              <a href="javascript:window.open('https://jitendra1405.github.io/Saasnic-CallingMain/client/src/html/chatting.html','mywindowtitle','top=250,left=950,width=400,height=400')" class="btn-action fa fa-phone"></a>
+     
  
                       
           </div>
