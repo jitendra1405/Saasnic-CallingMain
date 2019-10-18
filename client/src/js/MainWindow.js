@@ -5,7 +5,7 @@ var url_string = window.location.href;
 let searchParams = new URLSearchParams(url.search);
 
 var bcd = searchParams.get('varName');
-
+var abc = searchParams.get('FriendID');
 console.log('loooooooooooooooooooooooooo',abc);
 console.log('loooooooooooooooooooooooooo',bcd);
 
@@ -20,10 +20,7 @@ const { startCall } = this.props;
 const config = { audio: true, video};
 return () => startCall(true, abc, config);
 }
-chatting(){
-  var abc = searchParams.get('FriendId');
-  window.open('https://jitendra1405.github.io/Saasnic-CallingMain/client/src/html/chatting.html?varName='+abc,'mywindowtitle','top=250,left=950,width=400,height=400');
-}
+
 callWithVideo12(video) {
 const { startCall12 } = this.props;
 const config = { audio: true, video: false};
@@ -51,7 +48,9 @@ return (
 	  
          <button type="button"className="btn-action fa fa-video-camera" onClick={this.callWithVideo(true)} />
          <button type="button" className="btn-action fa fa-phone"  onClick={this.callWithVideo12(false)}  />
-    		 <button type="button" onClick={this.chatting()} class="btn-action fa fa-phone" />
+    		 <a href="javascript:window.open('https://jitendra1405.github.io/Saasnic-CallingMain/client/src/html/chatting.html','mywindowtitle','top=250,left=950,width=400,height=400')" class="btn-action fa fa-commenting-o"></a>
+     
+	 
       </div>
    </div>
 </div>
