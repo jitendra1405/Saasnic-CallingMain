@@ -32,7 +32,7 @@ class MainWindow extends Component {
     document.title = `${clientId} - VideoCall`;
     return (
        <div className="main-window">
-        <div>
+        <div class="call-box">
           <h3>
             Hi, your ID is
             <input
