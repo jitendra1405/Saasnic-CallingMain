@@ -5,7 +5,7 @@ var url_string = window.location.href;
 let searchParams = new URLSearchParams(url.search);
 var abc = searchParams.get('FriendId');
 var bcd = searchParams.get('varName');
-var a = "
+
 console.log('loooooooooooooooooooooooooo',abc);
 console.log('loooooooooooooooooooooooooo',bcd);
 function chatting(){
