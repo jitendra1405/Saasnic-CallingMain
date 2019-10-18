@@ -197,13 +197,15 @@ document.getElementById("myBtn").disabled = false;
     
       <button
             type="button"
-            Style="content: '';background-color: green;border-color: white;border-radius: 50%;border-width: 5px;height: 40px; width: 40px;"
+			className="btn-action fa fa-television"
+            Style="background-color: green;"
             onClick={() => this.btnstartrecording()}
           />
         <button
             type="button"
+			className="btn-action fa fa-stop"
             id="myBtn"
-            Style="content: '';background-color: red;border-color: white;border-radius: 50%;border-width: 5px;height: 40px; width: 40px;"
+            Style="background-color: red;"
             onClick={() => this.btnstoprecording()}
           />
         
