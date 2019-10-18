@@ -31,7 +31,7 @@ class MainWindow extends Component {
     console.log(`${clientId}`);
     document.title = `${clientId} - VideoCall`;
     return (
-      
+       <div className="main-window">
         <div>
           <h3>
             Hi, your ID is
@@ -44,7 +44,7 @@ class MainWindow extends Component {
           </h3>
           <h4>Get started by calling a friend below</h4>
         <div>
-          
+       </div>   
 
 
           <input
