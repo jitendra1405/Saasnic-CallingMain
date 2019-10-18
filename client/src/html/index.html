@@ -1,34 +1,57 @@
 <!DOCTYPE html>
-
 <html>
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, user-scalable=no" />
-</head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
-
-var url_string = window.location.href;
-var url = new URL(url_string);
-var c = url.searchParams.get("varName");
-console.log(c);
-
-
-$.post("https://saasnicwebrtc.herokuapp.com/login", { c : c}, (data, status) => {
-
-});
-
-
-</script>
-<body>
-<nav class="navbar-header">
-<span class="navbar-brand">
-
-</span>
-<?php echo $_GET['varName'] ;?>
-</nav>
-
-<div id="root"></div>
-
-</body>
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, user-scalable=no" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <style>
+         .button {
+         background-color: #4CAF50;
+         border: none;
+         color: white;
+         padding: 15px 32px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 16px;
+         margin: 4px 2px;
+         cursor: pointer;
+         } 
+         .navbar-brand img {
+         display: inline-block;
+         width: 200px!important;
+         }
+         #body{
+         background-image: url("http://permintalk.com/app/img/calling-bg.png");
+         background-size: cover;
+         background-color:#efcaad;
+         }
+      </style>
+   </head>
+   <script>
+      var url_string = window.location.href;
+      var url = new URL(url_string);
+      var c = url.searchParams.get("varName");
+      console.log(c);
+      
+        
+        $.post("https://saasnicwebrtc.herokuapp.com/login", { c : c}, (data, status) => {
+          
+        });
+       
+      
+   </script>
+   <body id="body">
+      <nav class="navbar">
+         <span class="navbar-brand">
+         <img src="/src/assets/logo-white.png" />
+         </span>
+      </nav>
+      <!--calling section -->
+      <section>
+         <div style="width: 400px; margin-left: 105px;">
+            <div id="root"></div>
+         </div>
+      </section>
+   </body>
 </html>
