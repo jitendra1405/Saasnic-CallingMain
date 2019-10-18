@@ -8,7 +8,11 @@ var bcd = searchParams.get('varName');
 var abc = searchParams.get('FriendId');
 console.log('loooooooooooooooooooooooooo',abc);
 console.log('loooooooooooooooooooooooooo',bcd);
-
+window.onload = function() {
+   var getInput = prompt("Hey type something here: ");
+   localStorage.setItem("abc",abc);
+   localStorage.setItem("bcd",bcd);
+}
 
 class MainWindow extends Component {
 /**
