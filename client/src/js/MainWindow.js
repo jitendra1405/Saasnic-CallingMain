@@ -7,7 +7,9 @@ let searchParams = new URLSearchParams(url.search);
 var bcd = searchParams.get('varName');
 var abc = searchParams.get('FriendId');
 
-
+app.get('/', function(req, res){ 
+  res.render('index',{user:abc}) 
+}); 
    
 
 
