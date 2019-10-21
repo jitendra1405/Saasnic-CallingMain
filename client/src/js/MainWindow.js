@@ -30,6 +30,7 @@ return () => startCall12(true, abc, config);
 render() {
 const { clientId } = this.props;
 console.log(`${clientId}`);
+  console.log('the value of abc',bcd);
 document.title = `${clientId} - VideoCall`;
 return (
 <div className="main-window">
