@@ -23,9 +23,8 @@ const { startCall12 } = this.props;
 const config = { audio: true, video: false};
 return () => startCall12(true, abc, config);
 }
-callmsg() {
-location.href = "https://google.co.in";
-
+  callmsg() {
+console.log('heloooooooooooooooooooooooooo');
 }
 render() {
 const { clientId } = this.props;
@@ -33,15 +32,9 @@ console.log(`${clientId}`);
   console.log('the value of abc',bcd);
 document.title = `${clientId} - VideoCall`;
 return (
-   <script>
-  callmsg() {
-location.href = "https://google.co.in";
-
-}
-  </script>
 <div className="main-window">
    <div class="call-box">
-     
+      
          <input type="text" className="txt-clientId" defaultValue={clientId} readOnly />
       
       <input type="text" className="txt-clientId" spellCheck={false} placeholder="Your friend ID" defaultValue={abc} readOnly/>
@@ -53,8 +46,9 @@ location.href = "https://google.co.in";
 	  
          <button type="button"className="btn-action fa fa-video-camera" onClick={this.callWithVideo(true)} />
          <button type="button" className="btn-action fa fa-phone"  onClick={this.callWithVideo12(false)}  />
-    		 <button type="button" className="btn-action fa fa-commenting-o"  onClick="callmsg()"  />
-           </div>
+           <button type="button" className="btn-action fa fa-phone"  onClick={this.callmsg()}  />
+    		 <a href="javascript:window.open('https://jitendra1405.github.io/Saasnic-CallingMain/client/src/html/chatting.html?abc=','mywindowtitle','top=250,left=950,width=400,height=400')" class="btn-action fa fa-commenting-o"></a>
+        </div>
    </div>
 </div>
 );
