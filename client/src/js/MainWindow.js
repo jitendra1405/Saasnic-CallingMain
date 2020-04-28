@@ -30,9 +30,6 @@ console.log(`${clientId}`);
 document.title = `${clientId} - VideoCall`;
 return (
 <div className="main-window">
-   <div class="user-display">
-      <h4>Hey User Name</h4>
-   </div>
    <div class="call-box">
       
          <input type="text" className="txt-clientId" defaultValue={clientId} readOnly />
