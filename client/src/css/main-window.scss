@@ -43,7 +43,7 @@
 		background-color: transparent;
     text-transform: capitalize;
 		border: none;
-    width:50%;
+    width:45%;
 		/*border-bottom: solid 1px $black;*/
 		@include input-placeholder(rgba($black, 0.8));
 	}
