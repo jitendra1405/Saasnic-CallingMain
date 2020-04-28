@@ -48,7 +48,7 @@
 		@include input-placeholder(rgba($black, 0.8));
 	}
   .txt-clientId::before {
-  content: url(https://permintalk.com/img/avatar.png);
+  content: url("https://permintalk.com/img/avatar.png");
     width:150px;
     height:150px;
   }
