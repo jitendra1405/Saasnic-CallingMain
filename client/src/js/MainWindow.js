@@ -43,8 +43,8 @@ return (
 	  
          <button type="button"className="btn-action fa fa-video-camera" onClick={this.callWithVideo(true)} />
          <button type="button" className="btn-action fa fa-phone"  onClick={this.callWithVideo12(false)}  />
-    		 <a href="https://jitendra1405.github.io/Saasnic-CallingMain/client/src/html/chatting.html" onclick="this.href+'?key='+abc;" class="btn-action fa fa-commenting-o"></a>
-          </div>
+    		 <a href="https://jitendra1405.github.io/Saasnic-CallingMain/client/src/html/chatting.html?var=$abc','mywindowtitle','top=250,left=950,width=400,height=400')" class="btn-action fa fa-commenting-o"></a>
+        </div>
    </div>
 </div>
 );
