@@ -32,7 +32,7 @@ return (
 <div className="main-window">
    <div class="call-box">
       <span>
-        <img scr="https://permintalk.com/img/avatar.png" style="width:200px; height:200px;">
+        <img scr="https://permintalk.com/img/avatar.png">
          <input type="text" className="txt-clientId" defaultValue={clientId} readOnly />
       </span>
       <span>
