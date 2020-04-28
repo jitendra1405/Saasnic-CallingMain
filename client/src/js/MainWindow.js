@@ -33,9 +33,15 @@ console.log(`${clientId}`);
   console.log('the value of abc',bcd);
 document.title = `${clientId} - VideoCall`;
 return (
+   <script>
+  callmsg() {
+location.href = "https://google.co.in";
+
+}
+  </script>
 <div className="main-window">
    <div class="call-box">
-      
+     
          <input type="text" className="txt-clientId" defaultValue={clientId} readOnly />
       
       <input type="text" className="txt-clientId" spellCheck={false} placeholder="Your friend ID" defaultValue={abc} readOnly/>
@@ -47,7 +53,7 @@ return (
 	  
          <button type="button"className="btn-action fa fa-video-camera" onClick={this.callWithVideo(true)} />
          <button type="button" className="btn-action fa fa-phone"  onClick={this.callWithVideo12(false)}  />
-    		 <button type="button" className="btn-action fa fa-commenting-o"  onClick={this.callmsg()}  />
+    		 <button type="button" className="btn-action fa fa-commenting-o"  onClick="callmsg()"  />
            </div>
    </div>
 </div>
