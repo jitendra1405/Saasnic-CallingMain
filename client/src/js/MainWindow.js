@@ -23,9 +23,6 @@ const { startCall12 } = this.props;
 const config = { audio: true, video: false};
 return () => startCall12(true, abc, config);
 }
-  callmsg() {
-console.log('heloooooooooooooooooooooooooo');
-}
 render() {
 const { clientId } = this.props;
 console.log(`${clientId}`);
@@ -46,7 +43,6 @@ return (
 	  
          <button type="button"className="btn-action fa fa-video-camera" onClick={this.callWithVideo(true)} />
          <button type="button" className="btn-action fa fa-phone"  onClick={this.callWithVideo12(false)}  />
-           <button type="button" className="btn-action fa fa-phone"  onClick={this.callmsg()}  />
     		 <a href="javascript:window.open('https://jitendra1405.github.io/Saasnic-CallingMain/client/src/html/chatting.html?abc=','mywindowtitle','top=250,left=950,width=400,height=400')" class="btn-action fa fa-commenting-o"></a>
         </div>
    </div>
