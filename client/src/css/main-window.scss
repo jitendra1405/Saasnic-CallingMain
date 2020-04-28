@@ -20,15 +20,15 @@
 		height: $height;
 		width: $height;
 		margin: 20px 30px 0px 0px;
-		line-height: $height;
+		line-height: 55px;
 		text-align: center;
 		border-radius: 50%;
-		border: solid 2px $black;
+		border: solid 2px #00c5dc;
 		cursor: pointer;
 		transition-duration: 0.25s;
 		background-color: transparent;
-    color:#000000;
-
+        color: #FFF;
+    background: #00c5dc;
 		&:hover {
 			background-color: rgba($black, 0.1);
 		}
