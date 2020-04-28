@@ -43,7 +43,7 @@ return (
 	  
          <button type="button"className="btn-action fa fa-video-camera" onClick={this.callWithVideo(true)} />
          <button type="button" className="btn-action fa fa-phone"  onClick={this.callWithVideo12(false)}  />
-    		 <a href="https://jitendra1405.github.io/Saasnic-CallingMain/client/src/html/chatting.html?abc="+abc></a>
+    		 <a href='javascript:window.open("https://jitendra1405.github.io/Saasnic-CallingMain/client/src/html/chatting.html?abc="+abc)'></a>
         </div>
    </div>
 </div>
