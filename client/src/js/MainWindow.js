@@ -31,13 +31,12 @@ document.title = `${clientId} - VideoCall`;
 return (
 <div className="main-window">
    <div class="call-box">
-      <div style="width:40%; float:left;">
+      
          <input type="text" className="txt-clientId" defaultValue={clientId} readOnly />
-      </div>
-      <div style="width:18%; float:left;"></div>
-      <div style="width:40%; float:left;">
+      
+      
       <input type="text" className="txt-clientId" spellCheck={false} placeholder="Your friend ID" defaultValue={abc} readOnly/>
-      </div>
+      
 	  
 	  <div >
 	  
