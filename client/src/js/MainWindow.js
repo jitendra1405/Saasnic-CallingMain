@@ -24,7 +24,8 @@ const config = { audio: true, video: false};
 return () => startCall12(true, abc, config);
 }
 callmsg() {
-window.location.href = "https://google.co.in";
+location.href = "https://google.co.in";
+
 }
 render() {
 const { clientId } = this.props;
