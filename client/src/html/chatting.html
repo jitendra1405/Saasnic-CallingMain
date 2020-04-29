@@ -12,6 +12,8 @@
     font-size: 14px;
     line-height: 20px;
     margin-left: 15%;
+      margin-top:5px;
+      margin-bottom:5px;
     }
     .me-1 {
         text-align: left;
@@ -20,7 +22,52 @@
     font-size: 14px;
     line-height: 20px;
     margin-right: 15%;
+      margin-top:5px;
+      margin-bottom:5px;
     }
+    
+    /*new design */
+    .chat-bubble {
+  padding: 10px 14px;
+  background: #eee;
+  margin: 10px 30px;
+  border-radius: 9px;
+  position: relative;
+  animation: fadeIn 1s ease-in;
+  
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-bottom: 0;
+    margin-top: -10px;
+  }
+  
+  &--left {
+     &:after {
+      left: 0;
+      border-right-color: #eee;
+	    border-left: 0;
+      margin-left: -20px;
+    }
+  }
+  
+  &--right {
+    &:after {
+      right: 0;
+      border-left-color: $blue;
+	    border-right: 0;
+      margin-right: -20px;
+    }
+  }
+}
+
+    
+    
+    
   </style>
 </head>
 <body>
@@ -59,7 +106,7 @@
           // Set peer's message
           talk.innerText = await res.text();
           
-          talk.classList.add('me-1');
+          talk.classList.add('chat-bubble chat-bubble--right');
 
           // Add peer's message
           talks.appendChild(talk);
@@ -79,7 +126,7 @@
       // Create talk element
       const talk = document.createElement('div');
       talk.innerText = message.value;
-      talk.classList.add('me');
+      talk.classList.add('chat-bubble chat-bubble--left');
       talks.appendChild(talk);
       // Empty your message
       message.value = '';
