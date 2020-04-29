@@ -108,7 +108,7 @@
           // Set peer's message
           talk.innerText = await res.text();
           
-          talk.classList.add('chat-bubble chat-bubble--right');
+          talk.classList.add('me-1');
 
           // Add peer's message
           talks.appendChild(talk);
@@ -128,7 +128,7 @@
       // Create talk element
       const talk = document.createElement('div');
       talk.innerText = message.value;
-      talk.classList.add('chat-bubble chat-bubble--left');
+      talk.classList.add('me');
       talks.appendChild(talk);
       // Empty your message
       message.value = '';
