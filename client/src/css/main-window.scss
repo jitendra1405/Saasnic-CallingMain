@@ -53,6 +53,12 @@
     height:150px;
   }
   
+  .call-box input::before {
+  content: url("https://permintalk.com/img/avatar.png");
+    width:150px;
+    height:150px;
+  }
+  
   
 }
 
