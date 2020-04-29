@@ -7,7 +7,7 @@ import CallWindow from './CallWindow';
 
 function CallModal({ status, callFrom, startCall,startCall12, rejectCall }) {
   console.log('theriiii',status,rejectCall);
-   var audio = new Audio('http://hipehome.com/nokia-ringtone-2019-256k-46684.mp3');
+   var audio = new Audio('https://permintalk.com/assets/ring.mp3');
   if(status == " "){
      audio.pause();
     
