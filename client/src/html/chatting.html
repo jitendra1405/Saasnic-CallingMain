@@ -13,8 +13,8 @@
 <body>
   <h1> welcome <%= user%></h1>
   <p>
-    <input placeholder="User Id" id='your_id'>
-    <input placeholder="Friend Id" id='peer_id'>
+    <input placeholder="User Id" id='varName' className="txt-clientId" defaultValue={clientId} readOnly />
+    <input placeholder="Friend Id" id='FriendId' className="txt-clientId" spellCheck={false} placeholder="Your friend ID" defaultValue={abc} readOnly />
     <button onclick='receiveLoop(this)'>Connect</button>
   </p>
   <p style='position: absolute; bottom: 0;'>
@@ -27,6 +27,18 @@
     <!--This will be added by JavaScript -->
   </div>
   <script>
+    import React, { Component } from 'react';
+import PropTypes from 'proptypes';
+let friendID;
+var url_string = window.location.href;
+let searchParams = new URLSearchParams(url.search);
+
+var bcd = searchParams.get('varName');
+var abc = searchParams.get('FriendId');
+
+
+    
+    
     // Receive-loop
       app.post('/login', (req, res) => {
       const c = req.body.abc;
@@ -40,7 +52,7 @@
       while(true) {
         try {
           // Get peer's response
-          const res = await fetch(`https://ppng.ml/${peer_id.value}-${your_id.value}`);
+          const res = await fetch(`https://ppng.ml/${varName.value}-${FriendId.value}`);
           // Create talk element
           const talk = document.createElement('div');
           // Set peer's message
@@ -56,7 +68,7 @@
     // Send your message
     function send() {
       // Send your message
-      fetch(`https://ppng.ml/${your_id.value}-${peer_id.value}`, {
+      fetch(`https://ppng.ml/${varName.value}-${FriendId.value}`, {
         'method': 'POST',
         body: message.value
       });
