@@ -47,7 +47,7 @@ return (
            
          
 
-    		 <a href="javascript:window.open('https://jitendra1405.github.io/Saasnic-CallingMain/client/src/html/chatting.html?abc='"+abc+"'','mywindowtitle','top=250,left=950,width=400,height=400')" class="btn-action fa fa-commenting-o"></a>
+    		 <a href="javascript:window.open('https://jitendra1405.github.io/Saasnic-CallingMain/client/src/html/chatting.html?abc=','mywindowtitle','top=250,left=950,width=400,height=400')" class="btn-action fa fa-commenting-o"></a>
         </div>
    </div>
 </div>
