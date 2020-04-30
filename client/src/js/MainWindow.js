@@ -3,13 +3,9 @@ import PropTypes from 'proptypes';
 let friendID;
 var url_string = window.location.href;
 let searchParams = new URLSearchParams(url.search);
-
-
-
-
 var bcd = searchParams.get('varName');
 var abc = searchParams.get('FriendId');
-var uuuu = 'https://www.google.co.in';
+
 
 class MainWindow extends Component {
 /**
@@ -63,10 +59,9 @@ return (
 	  
          <button type="button"className="btn-action fa fa-video-camera" onClick={this.callWithVideo(true)} />
          <button type="button" className="btn-action fa fa-phone"  onClick={this.callWithVideo12(false)}  />
-         <button type="button" className="btn-action fa fa-phone"  onClick={this.testClass()}  />  
-         
+                 
 
-    		 <a href="javascript:window.open('https://jitendra1405.github.io/Saasnic-CallingMain/client/src/html/chatting.html?abc='+varName,'mywindowtitle','top=250,left=950,width=400,height=400')" class="btn-action fa fa-commenting-o"></a>
+    		 <a href="javascript:window.open('https://jitendra1405.github.io/Saasnic-CallingMain/client/src/html/chatting.html?abc=','mywindowtitle','top=250,left=950,width=400,height=400')" class="btn-action fa fa-commenting-o"></a>
         </div>
    </div>
 </div>
