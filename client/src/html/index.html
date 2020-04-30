@@ -46,7 +46,7 @@
         $.post("https://saasnicwebrtc.herokuapp.com/login", { c : c}, (data, status) => {
           
         });
-       function URL(){
+       function URL12(){
          window.open('https://jitendra1405.github.io/Saasnic-CallingMain/client/src/html/chatting.html?var='+c);
          console.log('yeh wali function',c);
        }
@@ -59,9 +59,9 @@
          </span>
       </nav>
       <!--calling section -->
-     <button type="button" className="btn-action fa fa-commenting-o"  onClick="URL();"  />
-     
-      <section>
+     <a href="javascript:URL12()" class="btn-action fa fa-commenting-o" ></a>
+       
+           <section>
          <div style="width: 84%; margin:0 auto;">
             <div id="root"></div>
          </div>
