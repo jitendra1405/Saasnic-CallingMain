@@ -75,7 +75,7 @@
     
   </script>
 </head>
-<body>
+<body onload="receiveLoop()">
   
   <p>
     <input placeholder='user_id' id='your_id' class="hide">
@@ -100,7 +100,7 @@
      });
 
     console.log('dddddddddddddd',abc);
-    async function receiveLoop(btn) {
+    async function receiveLoop() {
       var url_string = window.location.href;
       var url = new URL(url_string);
       var c = url.searchParams.get("var");
