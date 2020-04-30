@@ -33,15 +33,15 @@ return (
 <div className="main-window">
    <div class="call-box">
       <div casss="row">
-  <div class="col-md-5">
+  <div class="col-md-5 c-align">
   <div >
           <img src="https://permintalk.com/img/avatar.png"/>
   </div>
          <input type="text" className="txt-clientId" defaultValue={clientId} readOnly />
       </div>
-  <div class="col-md-2"></div>
+  <div class="col-md-2 c-align"></div>
   
-  <div class="col-md-5">
+  <div class="col-md-5 c-align">
   <div>
   <img src="https://permintalk.com/img/avatar.png"/>
   </div>
