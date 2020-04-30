@@ -67,11 +67,20 @@
     */
     
   </style>
+  <script>
+    var url_string = window.location.href;
+      var url = new URL(url_string);
+      var c = url.searchParams.get("var");
+      var d = url.searchParams.get("fre");
+    console.log('valur from HTML',c);
+    document.getElementById('your_id').value = c;
+    document.getElementById('peer_id').value = d;
+  </script>
 </head>
 <body>
   <h1> welcome <%= user%></h1>
   <p>
-    <input placeholder="User Id" id='your_id'>
+    <input placeholder='user_id' id='your_id'>
     <input placeholder="Friend Id" id='peer_id'>
     <button onclick='receiveLoop(this)'>Connect</button>
   </p>
