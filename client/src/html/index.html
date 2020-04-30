@@ -40,6 +40,7 @@
       var url_string = window.location.href;
       var url = new URL(url_string);
       var c = url.searchParams.get("varName");
+      var d = url.searchParams.get("FriendId");
       console.log(c);
       
         
@@ -47,7 +48,7 @@
           
         });
        function URL12(){
-         window.open('https://jitendra1405.github.io/Saasnic-CallingMain/client/src/html/chatting.html?var='+c);
+         window.open('https://jitendra1405.github.io/Saasnic-CallingMain/client/src/html/chatting.html?var='+c+'&fre='+d);
          console.log('yeh wali function',c);
        }
       
