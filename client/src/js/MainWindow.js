@@ -33,7 +33,7 @@ return (
 <div className="main-window">
    <div class="call-box">
       <div casss="row">
-  <div class="col-md-5" style="padding: 0px 50px 0 90px;">
+  <div class="col-md-5">
   <div >
           <img src="https://permintalk.com/img/avatar.png"/>
   </div>
