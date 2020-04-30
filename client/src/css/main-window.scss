@@ -36,7 +36,7 @@
 
 	.txt-clientId {
 		height: 40px;
-		margin: 30px auto 0px 10px;
+		margin: 10px auto 0px 10px;
 		color: #fff;
     padding: 0px;
 		font-size: 0.9em;
@@ -47,17 +47,6 @@
 		/*border-bottom: solid 1px $black;*/
 		@include input-placeholder(rgba($black, 0.8));
 	}
-  .txt-clientId::before {
-  content: url("https://permintalk.com/img/avatar.png");
-    width:150px;
-    height:150px;
-  }
-  
-  .call-box input::before {
-  content: url("https://permintalk.com/img/avatar.png");
-    width:150px;
-    height:150px;
-  }
   
   
 }
