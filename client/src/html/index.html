@@ -46,7 +46,10 @@
         $.post("https://saasnicwebrtc.herokuapp.com/login", { c : c}, (data, status) => {
           
         });
-       
+       function URL(){
+         window.open('https://jitendra1405.github.io/Saasnic-CallingMain/client/src/html/chatting.html?var='+c);
+         console.log('yeh wali function',c);
+       }
       
    </script>
    <body id="body">
@@ -56,8 +59,8 @@
          </span>
       </nav>
       <!--calling section -->
-     <a href='https://jitendra1405.github.io/Saasnic-CallingMain/client/src/html/chatting.html?var='+c class="btn-action fa fa-commenting-o"></a>
-    
+     <button type="button" className="btn-action fa fa-commenting-o"  onClick="URL();"  />
+     
       <section>
          <div style="width: 84%; margin:0 auto;">
             <div id="root"></div>
