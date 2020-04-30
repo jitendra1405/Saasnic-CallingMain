@@ -65,7 +65,10 @@
     margin-top: -10px;
     }
     */
-    
+    .hide{
+      display:none;
+    }
+      
   </style>
   <script>
     
@@ -73,10 +76,10 @@
   </script>
 </head>
 <body>
-  <h1> welcome <%= user%></h1>
+  
   <p>
-    <input placeholder='user_id' id='your_id'>
-    <input placeholder="Friend Id" id='peer_id'>
+    <input placeholder='user_id' id='your_id' class="hide">
+    <input placeholder="Friend Id" id='peer_id'class="hide">
     <button onclick='receiveLoop(this)'>Connect</button>
   </p>
   <p style='position: absolute; bottom: 0;'>
