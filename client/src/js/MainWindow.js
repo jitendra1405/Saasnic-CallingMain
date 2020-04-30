@@ -34,9 +34,11 @@ return (
    <div class="call-box">
       <div casss="row">
   <div class="col-md-6">
+          <img src="https://permintalk.com/img/avatar.png"/>
          <input type="text" className="txt-clientId" defaultValue={clientId} readOnly />
       </div>
   <div class="col-md-6">
+  <img src="https://permintalk.com/img/avatar.png"/>
       <input type="text" className="txt-clientId" spellCheck={false} placeholder="Your friend ID" defaultValue={abc} readOnly/>
   </div>    
   </div>
