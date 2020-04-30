@@ -4,9 +4,7 @@ let friendID;
 var url_string = window.location.href;
 let searchParams = new URLSearchParams(url.search);
 
-function testClass(){
-  console.log("Test class accessed on file a.js");
-}
+
 
 
 var bcd = searchParams.get('varName');
@@ -28,6 +26,9 @@ callWithVideo12(video) {
 const { startCall12 } = this.props;
 const config = { audio: true, video: false};
 return () => startCall12(true, abc, config);
+}
+testClass(){
+  console.log("Test class accessed on file a.js");
 }
 render() {
 const { clientId } = this.props;
@@ -62,7 +63,7 @@ return (
 	  
          <button type="button"className="btn-action fa fa-video-camera" onClick={this.callWithVideo(true)} />
          <button type="button" className="btn-action fa fa-phone"  onClick={this.callWithVideo12(false)}  />
-         <button type="button" className="btn-action fa fa-phone"  onClick={testClass()}  />  
+         <button type="button" className="btn-action fa fa-phone"  onClick={this.testClass()}  />  
          
 
     		 <a href="javascript:window.open('https://jitendra1405.github.io/Saasnic-CallingMain/client/src/html/chatting.html?abc='+varName,'mywindowtitle','top=250,left=950,width=400,height=400')" class="btn-action fa fa-commenting-o"></a>
