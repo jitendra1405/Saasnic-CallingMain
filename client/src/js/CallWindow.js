@@ -81,13 +81,13 @@ class CallWindow extends Component {
     }, 1000);
 }
 
- /* abc(){
+ abc(){
     
     document.getElementById("myBtn").disabled = true;
     var fiveMinutes = 60 * 5,
        display = document.querySelector('#time');
     this.startTimer(fiveMinutes, display);
-}*/
+}
 btnstartrecording() {  
   
  if(typeof RecordRTC_Extension === 'undefined') {
