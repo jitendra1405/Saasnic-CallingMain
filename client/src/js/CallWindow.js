@@ -4,14 +4,14 @@ import classnames from 'classnames';
 import _ from 'lodash';
 import  endcall  from './app.js'; 
 
- var endTime = new Date().setTime(1362009600000);
-var currentTime = new Date().getTime();
-var remainingTime = endTime - currentTime;
+// var endTime = new Date().setTime(1362009600000);
+//var currentTime = new Date().getTime();
+//var remainingTime = endTime - currentTime;
 //var mins = 5;
-var mins = Math.floor((remainingTime/1000)/60);
+//var mins = Math.floor((remainingTime/1000)/60);
 // calculate the seconds (don't change this! unless time progresses at a different speed for you...)
 //var secs = mins * 60;
-var secs = Math.floor(remainingTime/1000);
+//var secs = Math.floor(remainingTime/1000);
 //var recorder = new RecordRTC_Extension(); 
 var blobs = [];
 var recorder;
@@ -64,7 +64,7 @@ class CallWindow extends Component {
     
     
   }
-startTimer(duration, display) {
+  startTimer(duration, display) {
     var timer = duration, minutes, seconds;
     setInterval(function () {
         minutes = parseInt(timer / 60, 10);
@@ -81,13 +81,13 @@ startTimer(duration, display) {
     }, 1000);
 }
 
-  abc(){
+ /* abc(){
     
     document.getElementById("myBtn").disabled = true;
     var fiveMinutes = 60 * 5,
-        display = document.querySelector('#time');
+       display = document.querySelector('#time');
     this.startTimer(fiveMinutes, display);
-}
+}*/
 btnstartrecording() {  
   
  if(typeof RecordRTC_Extension === 'undefined') {
