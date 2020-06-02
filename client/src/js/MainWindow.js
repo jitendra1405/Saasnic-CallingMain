@@ -42,7 +42,7 @@ return (
          <input type="text" className="txt-clientId" defaultValue={clientId} readOnly />
       </div>
   <div class="col-md-2 c-align">
-  <img src="https://permintalk.com/img/source.gif" />
+  <!--<img src="https://permintalk.com/img/source.gif" />-->
   </div>
   
   <div class="col-md-5 c-align">
