@@ -197,7 +197,7 @@ document.getElementById("myBtn").disabled = false;
     
       <button
             type="button"
-			className="btn-action fa fa-television"
+			className="btn-action fa fa-file-video-o"
             Style="background-color: green;"
             onClick={() => this.btnstartrecording()}
           />
