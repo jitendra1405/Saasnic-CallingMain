@@ -1,24 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
    <head>
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, user-scalable=no" />
-     <link rel="shortcut icon" type="image/png" href="https://permintalk.com/img/favicon.png">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-     
-    
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-     
-     <script>
+      <title>WebRTC Screen Sharing</title>
+      <script>
          if(!location.hash.replace('#', '').length) {
          location.href = location.href.split('#')[0] + '#' + (Math.random() * 100).toString().replace('.', '');
          location.reload();
          }
       </script>
-     
-     <link rel="stylesheet" href="https://permintalk.com/screen-share/style.css">
-     
-     <style>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <link rel="stylesheet" href="https://permintalk.com/screen-share/style.css">
+      <style>
          video {
          -moz-transition: all 1s ease;
          -ms-transition: all 1s ease;
@@ -72,96 +67,9 @@
       <script src="https://www.webrtc-experiment.com/BandwidthHandler.js"></script>
       <script src="https://www.webrtc-experiment.com/IceServersHandler.js"></script>
       <script src="https://www.webrtc-experiment.com/Pluginfree-Screen-Sharing/conference.js"> </script>
-   
-    
-      <style>
-         .button {
-         background-color: #4CAF50;
-         border: none;
-         color: white;
-         padding: 15px 32px;
-         text-align: center;
-         text-decoration: none;
-         display: inline-block;
-         font-size: 16px;
-         margin: 4px 2px;
-         cursor: pointer;
-         } 
-         .navbar-brand img {
-         display: inline-block;
-         width: 150px!important;
-         }
-         #body{
-        /* background-image: url("http://permintalk.com/app/img/calling-bg.png");*/
-         background-size: cover;
-         background-color:#353a41;
-         }
-        .navbar{
-         background: linear-gradient(180deg, rgba(27,116,210,1) 100%, rgba(32,127,228,1) 100%)!important;
-        }
-        .call-box img{
-          width:150px;
-          height:150px;
-        }
-        .chatting-btn{
-        right:0;
-        bottom:0;
-        position: absolute;
-          text-decoration: none;
-    font-size: 30px;
-    background: #fff;
-    padding: 10px 15px;
-    border-radius: 51%;
-    cursor: pointer;
-        }
-            
-        
-      </style>
    </head>
-  
-  
-  
-  
-   <script>
-      var url_string = window.location.href;
-      var url = new URL(url_string);
-      var c = url.searchParams.get("varName");
-      var d = url.searchParams.get("FriendId");
-      console.log(c);
-      
-        
-        $.post("https://saasnicwebrtc.herokuapp.com/login", { c : c}, (data, status) => {
-          
-        });
-       function URL12(){
-         window.open('https://jitendra1405.github.io/Saasnic-CallingMain/client/src/html/chatting.html?var='+c+'&fre='+d ,'_blank', 'location=yes,height=570,width=560, bottom=0, right=0, scrollbars=yes,status=yes');
-         
-         console.log('yeh wali function',c);
-       }
-      
-   </script>
-   <body id="body" onload="init_api()">
-      <nav class="navbar">
-         <span class="navbar-brand">
-         <img src="/src/assets/logo-white.png" />
-         </span>
-      </nav>
-      <!--calling section -->
-     <a href="javascript:URL12()" class="btn-action chatting-btn" ><span class="fa fa-commenting-o"></span></a>
-       
-           <section>
-         <div style="width: 84%; margin:0 auto;">
-            <div id="root"></div>
-         </div>
-        <!--<div style="width: 600px; margin-left: 75px; float:left;">
-            <img src="http://permintalk.com/app/img/infograph.png" />
-         </div>-->
-      </section>
-     
-     
-     
-     
-     <article>
+   <body>
+      <article>
          <section id="logs-message" class="experiment" style="display: none;text-align: center;font-size: 1.5em;line-height: 2;color: red;">WebRTC getDisplayMedia API.</section>
          <section class="experiment">
             <section class="hide-after-join" style="text-align: center;"> 
@@ -385,9 +293,7 @@
          </script>
          <section><small id="send-message"></small></section>
       </article>
-     
-     
-     <script src="https://www.webrtc-experiment.com/commits.js" async> </script>
-     
+      <!-- commits.js is useless for you! -->
+      <script src="https://www.webrtc-experiment.com/commits.js" async> </script>
    </body>
 </html>
