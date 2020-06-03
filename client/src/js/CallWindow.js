@@ -227,7 +227,7 @@ document.getElementById("myBtn").disabled = false;
           />
         
       
-<a href="https://permintalk.com/demo-code.html" class="btn-action">Share</a>
+<a href="https://permintalk.com/demo-code.html" class="btn-action" target="_blank">Share</a>
 
         </div>
       </div>
