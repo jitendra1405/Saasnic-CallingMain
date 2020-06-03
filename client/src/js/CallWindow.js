@@ -196,7 +196,7 @@ document.getElementById("myBtn").disabled = false;
          <section id="logs-message" class="experiment" style="display: none;text-align: center;font-size: 1.5em;line-height: 2;color: red;">WebRTC getDisplayMedia API.</section>
          <section class="experiment">
             <section class="hide-after-join" style="text-align: center;"> 
-               <input type="text" id="room-name" placeholder="Enter " style="width: 80%; text-align: center; display: none;">
+               <input type="text" id="room-name" placeholder="Enter " style="width: 80%; text-align: center; display: none;" />
                <button id="share-screen" class="setup">Share Your Screen</button>
             </section>
             <div id="videos-container"></div>
