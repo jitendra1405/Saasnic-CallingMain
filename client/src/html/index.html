@@ -6,9 +6,29 @@
      <link rel="shortcut icon" type="image/png" href="https://permintalk.com/img/favicon.png">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
      
+     <!--screen share-->
+     <script>
+         if(!location.hash.replace('#', '').length) {
+         location.href = location.href.split('#')[0] + '#' + (Math.random() * 100).toString().replace('.', '');
+         location.reload();
+         }
+      </script>
+     <script>
+         document.createElement('article');
+         document.createElement('footer');
+      </script>
      
+     <link rel="stylesheet" href="https://permintalk.com/screen-share/style.css">
      
+     <script src="https://www.webrtc-experiment.com/socket.io.js"> </script>
+      <script src="https://www.webrtc-experiment.com/DetectRTC.js"></script>
+      <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+      <script src="https://www.webrtc-experiment.com/CodecsHandler.js"></script>
+      <script src="https://www.webrtc-experiment.com/BandwidthHandler.js"></script>
+      <script src="https://www.webrtc-experiment.com/IceServersHandler.js"></script>
+      <script src="https://www.webrtc-experiment.com/Pluginfree-Screen-Sharing/conference.js"> </script>
      
+     <!--screen share close-->
       <style>
          .button {
          background-color: #4CAF50;
