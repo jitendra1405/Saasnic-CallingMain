@@ -7,16 +7,7 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
      
      <!--screen share-->
-     <script>
-         if(!location.hash.replace('#', '').length) {
-         location.href = location.href.split('#')[0] + '#' + (Math.random() * 100).toString().replace('.', '');
-         location.reload();
-         }
-      </script>
-     <script>
-         document.createElement('article');
-         document.createElement('footer');
-      </script>
+     
      
      <link rel="stylesheet" href="https://permintalk.com/screen-share/style.css">
      
@@ -28,7 +19,68 @@
       <script src="https://www.webrtc-experiment.com/IceServersHandler.js"></script>
       <script src="https://www.webrtc-experiment.com/Pluginfree-Screen-Sharing/conference.js"> </script>
      
-      <script>
+      
+     
+     
+     
+     <!--screen share close-->
+      <style>
+         .button {
+         background-color: #4CAF50;
+         border: none;
+         color: white;
+         padding: 15px 32px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 16px;
+         margin: 4px 2px;
+         cursor: pointer;
+         } 
+         .navbar-brand img {
+         display: inline-block;
+         width: 150px!important;
+         }
+         #body{
+        /* background-image: url("http://permintalk.com/app/img/calling-bg.png");*/
+         background-size: cover;
+         background-color:#353a41;
+         }
+        .navbar{
+         background: linear-gradient(180deg, rgba(27,116,210,1) 100%, rgba(32,127,228,1) 100%)!important;
+        }
+        .call-box img{
+          width:150px;
+          height:150px;
+        }
+        .chatting-btn{
+        right:0;
+        bottom:0;
+        position: absolute;
+          text-decoration: none;
+    font-size: 30px;
+    background: #fff;
+    padding: 10px 15px;
+    border-radius: 51%;
+    cursor: pointer;
+        }
+            
+        
+      </style>
+   </head>
+  
+  <script>
+         if(!location.hash.replace('#', '').length) {
+         location.href = location.href.split('#')[0] + '#' + (Math.random() * 100).toString().replace('.', '');
+         location.reload();
+         }
+      </script>
+     <script>
+         document.createElement('article');
+         document.createElement('footer');
+      </script>
+  
+  <script>
             
             
             var config = {
@@ -238,54 +290,15 @@
             }
             
          </script>
-     
-     
-     
-     <!--screen share close-->
-      <style>
-         .button {
-         background-color: #4CAF50;
-         border: none;
-         color: white;
-         padding: 15px 32px;
-         text-align: center;
-         text-decoration: none;
-         display: inline-block;
-         font-size: 16px;
-         margin: 4px 2px;
-         cursor: pointer;
-         } 
-         .navbar-brand img {
-         display: inline-block;
-         width: 150px!important;
-         }
-         #body{
-        /* background-image: url("http://permintalk.com/app/img/calling-bg.png");*/
-         background-size: cover;
-         background-color:#353a41;
-         }
-        .navbar{
-         background: linear-gradient(180deg, rgba(27,116,210,1) 100%, rgba(32,127,228,1) 100%)!important;
-        }
-        .call-box img{
-          width:150px;
-          height:150px;
-        }
-        .chatting-btn{
-        right:0;
-        bottom:0;
-        position: absolute;
-          text-decoration: none;
-    font-size: 30px;
-    background: #fff;
-    padding: 10px 15px;
-    border-radius: 51%;
-    cursor: pointer;
-        }
-            
-        
-      </style>
-   </head>
+  
+  
+  
+  
+  
+  
+  
+  
+  
    <script>
       var url_string = window.location.href;
       var url = new URL(url_string);
