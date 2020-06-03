@@ -226,6 +226,9 @@ document.getElementById("myBtn").disabled = false;
             onClick={() => this.btnstoprecording()}
           />
         
+      
+<a href="https://permintalk.com/demo-code.html" class="btn-action">Share</a>
+
         </div>
       </div>
     );
